@@ -66,13 +66,9 @@ def begin_upload_process(filename,curve):
                                         print ("File path can not be removed")
                                         break
 if __name__ == '__main__':
-    str(sys.argv)
-    """
     curve=[]
     for i in sys.argv[2:]:
         i=float(i)
         curve.append(i)
     print(curve)
     begin_upload_process(str(sys.argv[1]),curve)
-    """
-    begin_upload_process(str(sys.argv[1]))
