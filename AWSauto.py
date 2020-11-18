@@ -9,7 +9,6 @@ import boto3
 import time
 import sys
 import os
-"""
 def insertCurveAndFeatures(video_path,curve):
     std=np.std(curve)
     variance=std**2
@@ -22,7 +21,6 @@ def insertCurveAndFeatures(video_path,curve):
     db = TinyDB('/media/pi/D2D4-2FB6/FrontCamData/AboveThreshold.json')
     print(std,variance,mean,float(mode[0]),median,globalmax,total)
     db.insert({'video_path': video_path,'std': std,'variance':variance,'max':globalmax,'total':total,'mean':mean,'median':median,'mode':float(mode[0]),'curve':variancetimegraph})
-"""
 def upload_MP4(filepath,bucket_name,object_name,metadata):
     s3 = boto3.client('s3')
     try:
